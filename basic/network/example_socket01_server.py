@@ -16,7 +16,7 @@ serverSock.listen(1)
 
 # 접속을 받아들이는 단계
 # accept을 하게 되면 return으로 상대의 소켓과, 상대의 AF를 전달받음
-# 이후 accept으로 생성된 clientSock=connectionSock라는 소켓을 이용해서 데이터를 주고받음
+# 이후 accept으로 생성된 connectionSock라는 소켓을 이용해서 데이터를 주고받음
 connectionSock, addr = serverSock.accept()
 
 print(str(addr), '에서 접속이 확인되었습니다.')
